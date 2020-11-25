@@ -65,5 +65,5 @@ self.addEventListener('fetch', e => {
       }
     }
   );
-  e.waitUntil(resourceProm);
+  e.waitUntil(e.respondWith(fetchResProm));
 });
